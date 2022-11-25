@@ -5,25 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Contacto</title>
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img src="../img/favicon.png" alt="Logo"></a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./venta.html">VENTAS</a></li>
-                <li><a href="./alquileres.html">ALQUILERES</a></li>
-                <li><a href="./tasaciones.html">TASACIONES</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
+    <header class="header-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="../index.html" class="logo"><img src="../img/favicon.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./venta.html">VENTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./alquileres.html">ALQUILERES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tasaciones.html">TASACIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     
-    <main>
-        <h1>¡CONTACTANOS!</h1>
+    <main class="contacto-main-container">
+        <h1 class="h1-contacto">¡CONTACTANOS!</h1>
         <section class="gen-container">
             <div class="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11065.167582759184!2d-60.28416961250628!3d-38.38233729704405!2m3
@@ -31,9 +52,9 @@
                 C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1666295886532!5m2!1ses!2sar" width="600" height="450" 
                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="form-contacto-container">
-                <form method="post" class="form-contacto">
-                    <ul class="form2">
+            <div class="form-cont-container">
+                <form method="post" class="form-cont">
+                    <ul class="formulario-contacto">
                         <li>
                             Nombre*
                             <br>
@@ -52,10 +73,11 @@
                         <li>
                             Mensaje*
                             <br>
-                            <textarea name="mensaje" cols="50" rows="10"></textarea>
+                            <textarea name="mensaje" cols="40" rows="10"></textarea>
                         </li>
                     </ul>
                 </form>
+                <button class="boton-enviar">ENVIAR</button>
             </div>
         </section>
     </main>
@@ -99,5 +121,8 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
